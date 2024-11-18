@@ -1,14 +1,15 @@
 package com.finance_management.mappers;
 
-import com.finance_management.entities.Account;
-import com.finance_management.entities.Transaction;
-import com.finance_management.entities.User;
-import com.finance_management.utils.dto.AccountDto;
-import com.finance_management.utils.dto.TransactionDto;
-import com.finance_management.utils.dto.UserDto;
-import com.finance_management.utils.enums.Bank;
-import com.finance_management.utils.enums.Currency;
-import com.finance_management.utils.enums.TransactionType;
+import com.account.entities.Account;
+import com.account.entities.Transaction;
+import com.account.entities.User;
+import com.account.mappers.TransactionMapper;
+import com.account.utils.dto.AccountDto;
+import com.account.utils.dto.TransactionDto;
+import com.account.utils.dto.UserDto;
+import com.account.utils.enums.Bank;
+import com.account.utils.enums.Currency;
+import com.account.utils.enums.TransactionType;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

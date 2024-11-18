@@ -1,12 +1,12 @@
-package finance_management.security.service;
+package com.finance_management.security.service;
 
-import finance_management.security.entity.User;
-import finance_management.security.events.UserCreatedEvent;
-import finance_management.security.events.UserProducer;
-import finance_management.security.repository.UserRepository;
-import finance_management.security.utils.AuthenticationRequest;
-import finance_management.security.utils.AuthenticationResponse;
-import finance_management.security.utils.Role;
+import com.finance_management.events.UserCreatedEvent;
+import com.finance_management.security.repository.UserRepository;
+import com.finance_management.security.entity.User;
+import com.finance_management.security.events.UserProducer;
+import com.finance_management.security.utils.AuthenticationRequest;
+import com.finance_management.security.utils.AuthenticationResponse;
+import com.finance_management.security.utils.Role;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;

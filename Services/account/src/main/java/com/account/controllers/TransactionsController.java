@@ -1,10 +1,10 @@
-package com.finance_management.controllers;
+package com.account.controllers;
 
-import com.finance_management.services.TransactionService;
-import com.finance_management.utils.dto.TransactionDto;
-import com.finance_management.utils.httpResponses.CreateHttpResponse;
-import com.finance_management.utils.httpResponses.GetAllHttpResponse;
-import com.finance_management.utils.httpResponses.GetHttpResponse;
+import com.account.services.TransactionService;
+import com.account.utils.dto.TransactionDto;
+import com.account.utils.httpResponses.CreateHttpResponse;
+import com.account.utils.httpResponses.GetAllHttpResponse;
+import com.account.utils.httpResponses.GetHttpResponse;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,14 +1,14 @@
-package com.finance_management.services;
+package com.account.services;
 
-import com.finance_management.entities.Account;
-import com.finance_management.mappers.AccountMapper;
-import com.finance_management.repositories.AccountRepository;
-import com.finance_management.utils.httpResponses.CreateHttpResponse;
-import com.finance_management.utils.httpResponses.DeleteHttpResponse;
-import com.finance_management.utils.httpResponses.GetAllHttpResponse;
-import com.finance_management.utils.httpResponses.accountResponse.CreateAccountHttpResponse;
-import com.finance_management.utils.httpResponses.GetHttpResponse;
-import com.finance_management.utils.dto.AccountDto;
+import com.account.repositories.AccountRepository;
+import com.account.entities.Account;
+import com.account.mappers.AccountMapper;
+import com.account.utils.httpResponses.CreateHttpResponse;
+import com.account.utils.httpResponses.DeleteHttpResponse;
+import com.account.utils.httpResponses.GetAllHttpResponse;
+import com.account.utils.httpResponses.accountResponse.CreateAccountHttpResponse;
+import com.account.utils.httpResponses.GetHttpResponse;
+import com.account.utils.dto.AccountDto;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

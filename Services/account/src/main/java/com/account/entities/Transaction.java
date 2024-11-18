@@ -1,6 +1,6 @@
-package com.finance_management.entities;
+package com.account.entities;
 
-import com.finance_management.utils.enums.TransactionType;
+import com.account.utils.enums.TransactionType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

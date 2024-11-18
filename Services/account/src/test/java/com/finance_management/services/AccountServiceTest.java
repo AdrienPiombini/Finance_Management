@@ -1,22 +1,22 @@
 package com.finance_management.services;
 
-import com.finance_management.entities.Account;
-import com.finance_management.entities.User;
-import com.finance_management.mappers.AccountMapper;
-import com.finance_management.repositories.AccountRepository;
-import com.finance_management.utils.dto.AccountDto;
-import com.finance_management.utils.dto.UserDto;
-import com.finance_management.utils.enums.Bank;
-import com.finance_management.utils.httpResponses.CreateHttpResponse;
-import com.finance_management.utils.httpResponses.DeleteHttpResponse;
-import com.finance_management.utils.httpResponses.GetAllHttpResponse;
-import com.finance_management.utils.httpResponses.GetHttpResponse;
+import com.account.entities.Account;
+import com.account.entities.User;
+import com.account.mappers.AccountMapper;
+import com.account.repositories.AccountRepository;
+import com.account.services.AccountService;
+import com.account.utils.dto.AccountDto;
+import com.account.utils.dto.UserDto;
+import com.account.utils.enums.Bank;
+import com.account.utils.httpResponses.CreateHttpResponse;
+import com.account.utils.httpResponses.DeleteHttpResponse;
+import com.account.utils.httpResponses.GetAllHttpResponse;
+import com.account.utils.httpResponses.GetHttpResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;

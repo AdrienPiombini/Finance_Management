@@ -1,7 +1,7 @@
-package finance_management.security.service;
+package com.finance_management.security.service;
 
-import finance_management.security.entity.User;
-import finance_management.security.repository.UserRepository;
+import com.finance_management.security.repository.UserRepository;
+import com.finance_management.security.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

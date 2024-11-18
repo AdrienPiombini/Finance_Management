@@ -1,8 +1,7 @@
-package finance_management.security.controller;
+package com.finance_management.security.controller;
 
-import finance_management.security.service.AuthenticationService;
-import finance_management.security.events.UserProducer;
-import finance_management.security.utils.AuthenticationRequest;
+import com.finance_management.security.service.AuthenticationService;
+import com.finance_management.security.utils.AuthenticationRequest;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.http.HttpStatus;

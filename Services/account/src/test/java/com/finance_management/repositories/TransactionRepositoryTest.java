@@ -1,7 +1,8 @@
 package com.finance_management.repositories;
 
-import com.finance_management.entities.Transaction;
-import com.finance_management.utils.enums.TransactionType;
+import com.account.entities.Transaction;
+import com.account.repositories.TransactionRepository;
+import com.account.utils.enums.TransactionType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

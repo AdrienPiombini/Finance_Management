@@ -1,8 +1,8 @@
-package com.finance_management.mappers;
+package com.account.mappers;
 
 
-import com.finance_management.entities.User;
-import com.finance_management.utils.dto.UserDto;
+import com.account.entities.User;
+import com.account.utils.dto.UserDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

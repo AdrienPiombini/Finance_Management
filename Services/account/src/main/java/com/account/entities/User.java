@@ -1,4 +1,4 @@
-package com.finance_management.entities;
+package com.account.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

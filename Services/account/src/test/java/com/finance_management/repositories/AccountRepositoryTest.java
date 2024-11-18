@@ -1,8 +1,10 @@
 package com.finance_management.repositories;
 
-import com.finance_management.entities.Account;
-import com.finance_management.entities.User;
-import com.finance_management.utils.enums.Bank;
+import com.account.entities.Account;
+import com.account.entities.User;
+import com.account.repositories.AccountRepository;
+import com.account.repositories.UserRepository;
+import com.account.utils.enums.Bank;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.finance_management.utils.httpResponses;
+package com.account.utils.httpResponses;
 
 import org.springframework.http.HttpStatus;
 

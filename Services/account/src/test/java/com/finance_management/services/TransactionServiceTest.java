@@ -1,14 +1,16 @@
 package com.finance_management.services;
 
-import com.finance_management.entities.Account;
-import com.finance_management.entities.Transaction;
-import com.finance_management.entities.User;
-import com.finance_management.mappers.TransactionMapper;
-import com.finance_management.repositories.TransactionRepository;
-import com.finance_management.utils.dto.TransactionDto;
-import com.finance_management.utils.httpResponses.GetAllHttpResponse;
-import com.finance_management.utils.httpResponses.GetHttpResponse;
-import com.finance_management.utils.httpResponses.transactionResponse.CreateTransactionHttpResponse;
+import com.account.entities.Account;
+import com.account.entities.Transaction;
+import com.account.entities.User;
+import com.account.mappers.TransactionMapper;
+import com.account.repositories.TransactionRepository;
+import com.account.services.AccountService;
+import com.account.services.TransactionService;
+import com.account.utils.dto.TransactionDto;
+import com.account.utils.httpResponses.GetAllHttpResponse;
+import com.account.utils.httpResponses.GetHttpResponse;
+import com.account.utils.httpResponses.transactionResponse.CreateTransactionHttpResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

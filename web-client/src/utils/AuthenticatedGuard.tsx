@@ -3,7 +3,7 @@ import { authenticationService } from "../services/authenticationServices";
 
 export default function AuthGuard({ children }) {
   if (!authenticationService.isLogged()) {
-    return <Navigate to="/login"></Navigate>;
+    return <Navigate to="/"></Navigate>;
   }
   return children;
 }

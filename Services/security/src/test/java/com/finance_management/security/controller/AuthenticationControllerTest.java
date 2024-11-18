@@ -1,14 +1,13 @@
-package finance_management.security.controller;
+package com.finance_management.security.controller;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import finance_management.security.service.AuthenticationService;
-import finance_management.security.utils.AuthenticationRequest;
-import finance_management.security.utils.AuthenticationResponse;
+import com.finance_management.security.service.AuthenticationService;
+import com.finance_management.security.utils.AuthenticationRequest;
+import com.finance_management.security.utils.AuthenticationResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;

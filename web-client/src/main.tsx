@@ -3,11 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./styles/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UnAuthGuard from "./utils/UnAuthenticatedGuard";
-import Home from "./pages/Home";
 import AuthGuard from "./utils/AuthenticatedGuard";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+
 import ErrorPage from "./utils/ErrorPage";
+import Home from "./pages/public/Home";
+import Login from "./pages/public/Login";
+import Register from "./pages/public/Register";
+import SecuredEndpoint from "./pages/private/Secured";
 
 const router = createBrowserRouter([
   {
@@ -30,10 +32,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/",
+    path: "/secured",
     element: (
       <AuthGuard>
-        <Home />
+        <SecuredEndpoint />
       </AuthGuard>
     ),
   },

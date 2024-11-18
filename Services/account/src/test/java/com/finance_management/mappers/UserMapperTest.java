@@ -1,9 +1,9 @@
 package com.finance_management.mappers;
 
-import com.finance_management.entities.User;
-import com.finance_management.utils.dto.UserDto;
+import com.account.entities.User;
+import com.account.mappers.UserMapper;
+import com.account.utils.dto.UserDto;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.jupiter.api.Assertions.*;
 

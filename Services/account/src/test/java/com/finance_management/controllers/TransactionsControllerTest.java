@@ -1,11 +1,12 @@
 package com.finance_management.controllers;
 
-import com.finance_management.entities.Transaction;
-import com.finance_management.services.TransactionService;
-import com.finance_management.utils.dto.TransactionDto;
-import com.finance_management.utils.httpResponses.GetAllHttpResponse;
-import com.finance_management.utils.httpResponses.GetHttpResponse;
-import com.finance_management.utils.httpResponses.transactionResponse.CreateTransactionHttpResponse;
+import com.account.controllers.TransactionsController;
+import com.account.entities.Transaction;
+import com.account.services.TransactionService;
+import com.account.utils.dto.TransactionDto;
+import com.account.utils.httpResponses.GetAllHttpResponse;
+import com.account.utils.httpResponses.GetHttpResponse;
+import com.account.utils.httpResponses.transactionResponse.CreateTransactionHttpResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,8 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest(TransactionController.class)
-class TransactionControllerTest {
+@WebMvcTest(TransactionsController.class)
+class TransactionsControllerTest {
     @Autowired
     private MockMvc mockMvc;
 

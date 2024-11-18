@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { authenticationService } from "../services/authenticationServices";
+import { authenticationService } from "../../services/authenticationServices";
 
 export default function Register() {
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
-    user_credential: "",
-    user_password: "",
-    confirm_password: "",
+    username: "",
+    password: "",
   });
   const [error, setError] = useState("");
 
@@ -20,12 +19,6 @@ export default function Register() {
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
-    const { user_password, confirm_password } = credentials;
-
-    if (user_password !== confirm_password) {
-      setError("Passwords do not match");
-      return;
-    }
 
     const res = await authenticationService.register(credentials);
 
@@ -34,7 +27,7 @@ export default function Register() {
       return;
     }
 
-    navigate("/dashboard");
+    navigate("/secured");
   };
 
   return (
@@ -45,10 +38,10 @@ export default function Register() {
           <label htmlFor="register">Username</label>
           <input
             type="text"
-            name="user_credential"
-            placeholder="user_credentials"
+            name="username"
+            placeholder="username"
             id=""
-            value={credentials.user_credential}
+            value={credentials.username}
             onChange={onChange}
           />
         </div>
@@ -57,26 +50,13 @@ export default function Register() {
           <label htmlFor="register">Password</label>
           <input
             type="password"
-            name="user_password"
-            placeholder="user_password"
+            name="password"
+            placeholder="password"
             id=""
-            value={credentials.user_password}
+            value={credentials.password}
             onChange={onChange}
           />
         </div>
-
-        <div className="group">
-          <label htmlFor="register">Confirm Password</label>
-          <input
-            type="password"
-            name="confirm_password"
-            placeholder="confirm password"
-            id=""
-            value={credentials.confirm_password}
-            onChange={onChange}
-          />
-        </div>
-
         <div className="group">
           {error && <p style={{ color: "red" }}>{error}</p>}
           <button>Connexion</button>

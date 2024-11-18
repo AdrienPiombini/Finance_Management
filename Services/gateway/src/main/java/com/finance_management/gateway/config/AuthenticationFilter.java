@@ -1,4 +1,4 @@
-package com.finance_management.gateway;
+package com.finance_management.gateway.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

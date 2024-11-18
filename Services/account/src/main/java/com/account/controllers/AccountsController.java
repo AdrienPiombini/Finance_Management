@@ -1,11 +1,11 @@
-package com.finance_management.controllers;
+package com.account.controllers;
 
-import com.finance_management.services.AccountService;
-import com.finance_management.utils.httpResponses.CreateHttpResponse;
-import com.finance_management.utils.httpResponses.DeleteHttpResponse;
-import com.finance_management.utils.httpResponses.GetAllHttpResponse;
-import com.finance_management.utils.httpResponses.GetHttpResponse;
-import com.finance_management.utils.dto.AccountDto;
+import com.account.services.AccountService;
+import com.account.utils.httpResponses.CreateHttpResponse;
+import com.account.utils.httpResponses.DeleteHttpResponse;
+import com.account.utils.httpResponses.GetAllHttpResponse;
+import com.account.utils.httpResponses.GetHttpResponse;
+import com.account.utils.dto.AccountDto;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

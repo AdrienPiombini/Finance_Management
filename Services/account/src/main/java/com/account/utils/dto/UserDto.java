@@ -1,4 +1,4 @@
-package com.finance_management.utils.dto;
+package com.account.utils.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

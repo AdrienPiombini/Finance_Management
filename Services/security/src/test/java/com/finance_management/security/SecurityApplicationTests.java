@@ -1,4 +1,4 @@
-package finance_management.security;
+package com.finance_management.security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

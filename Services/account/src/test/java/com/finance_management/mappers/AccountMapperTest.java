@@ -1,11 +1,12 @@
 package com.finance_management.mappers;
 
-import com.finance_management.entities.Account;
-import com.finance_management.entities.User;
-import com.finance_management.utils.dto.AccountDto;
-import com.finance_management.utils.dto.UserDto;
-import com.finance_management.utils.enums.Bank;
-import com.finance_management.utils.enums.Currency;
+import com.account.entities.Account;
+import com.account.entities.User;
+import com.account.mappers.AccountMapper;
+import com.account.utils.dto.AccountDto;
+import com.account.utils.dto.UserDto;
+import com.account.utils.enums.Bank;
+import com.account.utils.enums.Currency;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AccountMapperTest {
 
     @Autowired
-    private  AccountMapper accountMapper;
+    private AccountMapper accountMapper;
 
     @Test
     public void shouldMapFromAccount(){

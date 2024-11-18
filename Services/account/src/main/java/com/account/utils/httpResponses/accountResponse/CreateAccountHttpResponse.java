@@ -1,7 +1,7 @@
-package com.finance_management.utils.httpResponses.accountResponse;
+package com.account.utils.httpResponses.accountResponse;
 
-import com.finance_management.utils.httpResponses.CreateHttpResponse;
-import com.finance_management.utils.dto.AccountDto;
+import com.account.utils.httpResponses.CreateHttpResponse;
+import com.account.utils.dto.AccountDto;
 import org.springframework.http.HttpStatus;
 
 

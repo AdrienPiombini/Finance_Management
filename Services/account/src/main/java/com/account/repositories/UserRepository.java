@@ -1,6 +1,6 @@
-package com.finance_management.repositories;
+package com.account.repositories;
 
-import com.finance_management.entities.User;
+import com.account.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

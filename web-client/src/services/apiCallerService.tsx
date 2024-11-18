@@ -2,7 +2,7 @@ import axios from "axios";
 import { authenticationService } from "./authenticationServices";
 
 const Axios = axios.create({
-  baseURL: "http://localhost:8080/",
+  baseURL: "http://localhost:8080",
 });
 
 Axios.interceptors.request.use((request) => {
@@ -20,6 +20,7 @@ Axios.interceptors.response.use(
     return response;
   },
   async (error) => {
+    console.log(error);
     if (error.response.status === 401) {
       authenticationService.logout();
     }

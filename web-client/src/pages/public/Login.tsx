@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
-import { authenticationService } from "../services/authenticationServices";
+import { authenticationService } from "../../services/authenticationServices";
 
 export default function Login() {
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
-    user_credential: "",
-    user_password: "",
+    username: "",
+    password: "",
   });
 
   const onChange = (event: any) => {
@@ -28,7 +28,7 @@ export default function Login() {
       return;
     }
 
-    navigate("/dashboard");
+    navigate("/secured");
   };
 
   return (
@@ -39,10 +39,10 @@ export default function Login() {
           <label htmlFor="login">Username</label>
           <input
             type="text"
-            name="user_credential"
-            placeholder="user_credentials"
+            name="username"
+            placeholder="username"
             id=""
-            value={credentials.user_credential}
+            value={credentials.username}
             onChange={onChange}
           />
         </div>
@@ -51,10 +51,10 @@ export default function Login() {
           <label htmlFor="login">Password</label>
           <input
             type="password"
-            name="user_password"
-            placeholder="user_credentials"
+            name="password"
+            placeholder="password"
             id=""
-            value={credentials.user_password}
+            value={credentials.password}
             onChange={onChange}
           />
         </div>

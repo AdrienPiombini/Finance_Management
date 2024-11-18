@@ -1,7 +1,7 @@
-package com.finance_management.utils.dto;
+package com.account.utils.dto;
 
-import com.finance_management.utils.enums.Bank;
-import com.finance_management.utils.enums.Currency;
+import com.account.utils.enums.Bank;
+import com.account.utils.enums.Currency;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

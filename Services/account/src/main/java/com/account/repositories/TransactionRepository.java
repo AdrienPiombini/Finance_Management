@@ -1,6 +1,6 @@
-package com.finance_management.repositories;
+package com.account.repositories;
 
-import com.finance_management.entities.Transaction;
+import com.account.entities.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {

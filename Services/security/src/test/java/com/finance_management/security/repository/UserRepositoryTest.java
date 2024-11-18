@@ -1,7 +1,7 @@
-package finance_management.security.repository;
+package com.finance_management.security.repository;
 
-import finance_management.security.entity.User;
-import finance_management.security.utils.Role;
+import com.finance_management.security.entity.User;
+import com.finance_management.security.utils.Role;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

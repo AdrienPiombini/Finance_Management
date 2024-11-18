@@ -1,7 +1,7 @@
-package finance_management.security.entity;
+package com.finance_management.security.entity;
 
 
-import finance_management.security.utils.Role;
+import com.finance_management.security.utils.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

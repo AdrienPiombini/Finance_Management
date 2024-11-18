@@ -1,4 +1,4 @@
-package finance_management.security.utils;
+package com.finance_management.security.utils;
 
 public enum Role {
     ROLE_USER,

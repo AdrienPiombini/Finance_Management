@@ -1,9 +1,9 @@
-package finance_management.security.service;
+package com.finance_management.security.service;
 
-import finance_management.security.entity.User;
-import finance_management.security.repository.UserRepository;
-import finance_management.security.utils.AuthenticationRequest;
-import finance_management.security.utils.AuthenticationResponse;
+import com.finance_management.security.entity.User;
+import com.finance_management.security.repository.UserRepository;
+import com.finance_management.security.utils.AuthenticationRequest;
+import com.finance_management.security.utils.AuthenticationResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
@@ -14,7 +14,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Optional;

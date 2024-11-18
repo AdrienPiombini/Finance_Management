@@ -1,4 +1,4 @@
-package com.finance_management.utils.enums;
+package com.account.utils.enums;
 
 public enum TransactionType {
     CREDIT, DEBIT

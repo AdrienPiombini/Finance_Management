@@ -8,11 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="security" />
+        <module name="gateway" />
+        <module name="account" />
+        <module name="events" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account" options="-parameters" />
+      <module name="events" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="security" options="-parameters" />
     </option>
   </component>

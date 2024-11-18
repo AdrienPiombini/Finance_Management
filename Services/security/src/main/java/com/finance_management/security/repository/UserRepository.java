@@ -1,6 +1,6 @@
-package finance_management.security.repository;
+package com.finance_management.security.repository;
 
-import finance_management.security.entity.User;
+import com.finance_management.security.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

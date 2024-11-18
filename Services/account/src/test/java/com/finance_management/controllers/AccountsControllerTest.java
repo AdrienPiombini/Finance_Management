@@ -1,12 +1,13 @@
 package com.finance_management.controllers;
 
-import com.finance_management.entities.Account;
-import com.finance_management.services.AccountService;
-import com.finance_management.utils.dto.AccountDto;
-import com.finance_management.utils.httpResponses.DeleteHttpResponse;
-import com.finance_management.utils.httpResponses.GetAllHttpResponse;
-import com.finance_management.utils.httpResponses.GetHttpResponse;
-import com.finance_management.utils.httpResponses.accountResponse.CreateAccountHttpResponse;
+import com.account.controllers.AccountsController;
+import com.account.entities.Account;
+import com.account.services.AccountService;
+import com.account.utils.dto.AccountDto;
+import com.account.utils.httpResponses.DeleteHttpResponse;
+import com.account.utils.httpResponses.GetAllHttpResponse;
+import com.account.utils.httpResponses.GetHttpResponse;
+import com.account.utils.httpResponses.accountResponse.CreateAccountHttpResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

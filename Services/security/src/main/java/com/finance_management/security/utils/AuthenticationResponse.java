@@ -1,4 +1,4 @@
-package finance_management.security.utils;
+package com.finance_management.security.utils;
 
 import org.springframework.security.core.AuthenticationException;
 

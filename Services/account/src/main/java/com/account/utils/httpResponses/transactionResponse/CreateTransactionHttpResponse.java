@@ -1,6 +1,6 @@
-package com.finance_management.utils.httpResponses.transactionResponse;
+package com.account.utils.httpResponses.transactionResponse;
 
-import com.finance_management.utils.httpResponses.CreateHttpResponse;
+import com.account.utils.httpResponses.CreateHttpResponse;
 import org.springframework.http.HttpStatus;
 
 public class CreateTransactionHttpResponse extends CreateHttpResponse {

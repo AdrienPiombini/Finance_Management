@@ -1,4 +1,4 @@
-package com.finance_management.security.events;
+package com.finance_management.events;
 
 
 import lombok.AllArgsConstructor;

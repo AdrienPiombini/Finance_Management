@@ -1,7 +1,7 @@
-package com.finance_management.mappers;
+package com.account.mappers;
 
-import com.finance_management.entities.Transaction;
-import com.finance_management.utils.dto.TransactionDto;
+import com.account.entities.Transaction;
+import com.account.utils.dto.TransactionDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,7 @@
-package com.finance_management.entities;
+package com.account.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.finance_management.utils.enums.Bank;
-import com.finance_management.utils.enums.Currency;
+import com.account.utils.enums.Bank;
+import com.account.utils.enums.Currency;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

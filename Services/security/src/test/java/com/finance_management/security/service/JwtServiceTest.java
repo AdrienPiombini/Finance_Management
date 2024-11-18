@@ -1,4 +1,4 @@
-package finance_management.security.service;
+package com.finance_management.security.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;

@@ -1,6 +1,6 @@
-package com.finance_management.utils.dto;
+package com.account.utils.dto;
 
-import com.finance_management.utils.enums.TransactionType;
+import com.account.utils.enums.TransactionType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.finance_management.gateway;
+package com.finance_management.gateway.config;
 
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;

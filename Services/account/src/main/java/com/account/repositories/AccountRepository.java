@@ -1,8 +1,8 @@
-package com.finance_management.repositories;
+package com.account.repositories;
 
-import com.finance_management.entities.Account;
-import com.finance_management.entities.User;
-import com.finance_management.utils.enums.Bank;
+import com.account.entities.Account;
+import com.account.entities.User;
+import com.account.utils.enums.Bank;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
