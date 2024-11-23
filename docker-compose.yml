@@ -26,3 +26,23 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 
 
+  mysql_security:
+    image: mysql:latest
+    restart: unless-stopped
+    container_name: mysql_authentication
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: finance_management_security
+    ports:
+      - "3333:3306"
+
+  mysql_accounts:
+    image: mysql:latest
+    restart: unless-stopped
+    container_name: mysql_accounts
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: finance_management_accounts
+    ports:
+      - "3334:3306"
+
