@@ -50,13 +50,12 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build Events Package
-      working-directory: ./events
-      run: mvn clean install
-
-    - name: Run Security Microservice Tests
-      working-directory: ./Services/security
-      run: mvn -B test --file pom.xml
+    - name: Build Events Package & Test Security
+      run: |
+        cd ./events
+        mvn clean install
+        cd ../Services/security
+        mvn -B test
 
     - name: Tear Down Services
       if: always()
