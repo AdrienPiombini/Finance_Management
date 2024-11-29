@@ -1,4 +1,4 @@
-name: Finance-Management-Workflows
+name: Finance-Management-Pipeline
 
 on:
   push:
@@ -50,8 +50,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Wait for Database and Kafka
-      run: sleep 30
+    - name: Build Events Package
+      working-directory: ./events
+      run: mvn clean install
 
     - name: Run Security Microservice Tests
       working-directory: ./Services/security
