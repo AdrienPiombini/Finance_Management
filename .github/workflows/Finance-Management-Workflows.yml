@@ -34,5 +34,5 @@ jobs:
 
     - name: Build and Test Inline
       run: |
-        mvn clean install -f ./events/pom.xml
+        mvn clean package -f ./events/pom.xml
         mvn clean test -f ./Services/security/pom.xml
