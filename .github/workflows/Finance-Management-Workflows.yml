@@ -31,9 +31,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
+    - name: Build Events Package
+      run: mvn -Dmaven.repo.local=$HOME/.m2/repository clean package -f ./events/pom.xml
 
-    - name: Build and Test Inline
-      run: |
-        mvn clean package -f ./events/pom.xml
-        mvn clean test -f ./Services/security/pom.xml
-  
+    - name: Run Tests for Security Service
+      working-directory: ./Services/security
+      run: mvn -Dmaven.repo.local=$HOME/.m2/repository clean test
