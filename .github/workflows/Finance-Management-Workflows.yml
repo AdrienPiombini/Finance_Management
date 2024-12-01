@@ -43,9 +43,6 @@ jobs:
       working-directory: ./events
       run: mvn clean install
 
-    - name: Verify Events Installation
-      run: ls -R ~/.m2/repository/com/finance_management/events
-
-    - name: Run Security Microservice Tests
+    - name: Build and Test Security
       working-directory: ./Services/security
-      run: mvn -U test
+      run: mvn -Dmaven.repo.local=$HOME/.m2/repository clean test
