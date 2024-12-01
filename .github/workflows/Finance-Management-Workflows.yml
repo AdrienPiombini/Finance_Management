@@ -48,4 +48,4 @@ jobs:
 
     - name: Run Security Microservice Tests
       working-directory: ./Services/security
-      run: mvn -B test
+      run: mvn -U test
