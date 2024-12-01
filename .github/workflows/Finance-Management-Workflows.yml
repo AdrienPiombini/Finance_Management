@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     services:
@@ -32,7 +31,10 @@ jobs:
         cache: maven
 
     - name: Build Events Package
-      run: mvn -Dmaven.repo.local=$HOME/.m2/repository clean package -f ./events/pom.xml
+      run: mvn -Dmaven.repo.local=$HOME/.m2/repository clean install -f ./events/pom.xml
+
+    - name: Verify Events Installation
+      run: ls -R $HOME/.m2/repository/com/finance_management/events
 
     - name: Run Tests for Security Service
       working-directory: ./Services/security
