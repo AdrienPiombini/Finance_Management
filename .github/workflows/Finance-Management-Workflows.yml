@@ -25,12 +25,15 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Cache Maven Dependencies
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
-          ${{ runner.os }}-maven-
+          ${{ runner.os }}-maven
+
+    - name: Verify Events Installation
+      run: ls -R ~/.m2/repository/com/finance_management/events
 
     - name: Set up JDK 21
       uses: actions/setup-java@v4
