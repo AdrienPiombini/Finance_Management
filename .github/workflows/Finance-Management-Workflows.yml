@@ -41,7 +41,7 @@ jobs:
 
     - name: Build Events Package
       working-directory: ./events
-      run: mvn clean install
+      run: mvn -Dmaven.repo.local=$HOME/.m2/repository clean install
 
     - name: Build and Test Security
       working-directory: ./Services/security
